@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+</head>
+<body>
+  <article>
+    <can-import from="steal-can-import/src/state" export-as="viewModel"/>
+    <can-import from="steal-can-import/src/home/home">
+      {{#if isResolved}}
+        <x-home title="{{./title}}"></x-home>
+      {{else}}
+        <h2>Loading...</h2>
+      {{/if}}
+    </can-import>
+  </article>
+</body>
+</html>
